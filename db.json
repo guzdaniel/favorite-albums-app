@@ -1,0 +1,16 @@
+{
+    "albums": [
+      {
+        "id": 1,
+        "title": "Parachutes",
+        "image": "https://coverartarchive.org/release-group/1dc4c347-a1db-32aa-b14f-bc9cc507b843/front",
+        "rating": 1
+      },
+      {
+        "id": 1,
+        "title": "A Rush of Blood to the Head",
+        "image": "https://coverartarchive.org/release-group/120c786d-a3b2-3c19-b4ff-2b7b3b4435bf/front",
+        "rating": 1
+      }
+    ]
+  }
