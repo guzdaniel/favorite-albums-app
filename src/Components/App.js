@@ -4,12 +4,14 @@ import Home from './Home';
 import AlbumList from './AlbumList';
 import AlbumForm from './AlbumForm';
 import AlbumDetails from './AlbumDetails';
+import Navigation from './Navigation';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <Navigation />
         <Switch>
           <Route path="/albums/new">
             <AlbumForm />
