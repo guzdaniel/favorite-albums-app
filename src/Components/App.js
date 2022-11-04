@@ -1,10 +1,11 @@
 import React from 'react';
-import './App.css';
+import '../App.css';
+import Home from './Home';
 
 function App() {
   return (
     <div className="App">
-      <h1>Favorite Albums App</h1>
+      <Home />
     </div>
   );
 }
