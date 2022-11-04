@@ -1,20 +1,9 @@
 import React from "react";
-import { useState, useEffect } from "react";
 
-function AlbumList(){
-    const [albums, setAlbums] = useState([])
-    
-    
-    useEffect(() => {
-        fetch("http://localhost:3001/albums")
-        .then(res => res.json())
-        .then(data => {
-            console.log(data)
-            setAlbums(data)
-        })
-    }, [])
+function AlbumList( {albums} ){
+    // const albumListItems = albums.map(albumObj => <AlbumItem key={albumObj.id} album={albumObj} />)
 
-
+    console.log(albums)
     return (
         <div>
             <h2>This the list of your favorite albums</h2>
