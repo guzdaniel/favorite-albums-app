@@ -8,7 +8,7 @@ function AlbumList( {albums} ){
 
     return (
         <div>
-            <h2>This the list of your favorite albums</h2>
+            <h3>ALBUMS IN MY COLLECTION</h3>
             {albumListItems}
         </div>
     )
