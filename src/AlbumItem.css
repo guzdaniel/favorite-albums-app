@@ -1,0 +1,24 @@
+.card {
+    display: inline-block;
+    padding: 0.3rem;
+    margin: 0.2rem;
+    background: Black;
+    text-decoration: none;
+    color: lightgreen;
+    font-size: 1.2em;
+    margin: 6px;
+    margin-bottom: 6px;
+    min-height: 450px;
+    max-height: 450px;
+    overflow: hidden;
+}
+
+.content {
+    display: inline-table;
+    inline-size: 150px;
+    overflow: hidden;
+}
+
+.image {
+    max-block-size: 200px;
+}
