@@ -5,6 +5,7 @@ import AlbumList from './AlbumList';
 import AlbumForm from './AlbumForm';
 import AlbumItem from './AlbumItem';
 import Navigation from './Navigation';
+import Header from './Header';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { useState, useEffect } from "react";
 
@@ -26,6 +27,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <Header className="header"/>
         <Navigation />
         <Switch>
           <Route path="/albums/new">
