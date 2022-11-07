@@ -1,20 +1,25 @@
 import React from "react";
 import { useState } from "react";
 
-function AlbumForm() {
+function AlbumForm( {addAlbum} ) {
 
-    const [title, setTitle] = useState("")
+    const [album, setAlbum] = useState({
+        title: "",
+        artist: "",
+        image: "",
+        rating: ""
+    })
 
     function handleSubmit(e) {
-        e.preventDefault()
+        e.preventDefault() 
         console.log("submitted")
     }
 
     function handleChange(e) {
-        setTitle(e.target.value)
+        setAlbum({...album, [e.target.name]: e.target.value})
     }
 
-    console.log("the title " + title)
+    console.log("the album " + album.title)
 
     return (
         <div>
@@ -22,7 +27,7 @@ function AlbumForm() {
                 <form className="container" onSubmit={handleSubmit}>
                     <label htmlFor="title">Album Title: </label>
                     <input type="text" id="title" name="title" placeholder="Enter Title"
-                        value={title} onChange={handleChange} /> <br/>
+                        value={album.title} onChange={handleChange} /> <br/>
 {/* 
                     <label htmlFor="title">Artist: </label>
                     <input type="text" id="artist" name="artist" placeholder="Enter Artist"
