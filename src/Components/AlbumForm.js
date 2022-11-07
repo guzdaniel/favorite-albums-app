@@ -24,6 +24,13 @@ function AlbumForm({ addAlbum }) {
             .then(res => res.json())
             .then(data => {
                 addAlbum(data)
+                setAlbumForm({
+                    title: "",
+                    artist: "",
+                    image: "",
+                    rating: ""
+                })
+
             })
 
 
