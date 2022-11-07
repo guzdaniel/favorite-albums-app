@@ -22,6 +22,9 @@ function App() {
         })
     }, [])
 
+    function addAlbum (addedAlbum){
+      setAlbums([...albums, addedAlbum])
+    }
 
 
   return (
@@ -31,7 +34,7 @@ function App() {
         <Navigation />
         <Switch>
           <Route path="/albums/new">
-            <AlbumForm />
+            <AlbumForm addAlbum={addAlbum}/>
           </Route>
           <Route path="/albums/:id">
             <AlbumItem />
