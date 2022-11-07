@@ -2,7 +2,7 @@ import React from "react";
 
 function Home() {
     return (
-        <div>
+        <div className="container">
             <h2>Welcome to Favorite Albums App</h2>
             <h4>An app where you can add all your favorite albums <br /> from your favorite artists so that you can <br />remember to listen to them later.
             </h4>

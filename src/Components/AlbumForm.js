@@ -15,14 +15,20 @@ function AlbumForm({ addAlbum }) {
         e.preventDefault()
         console.log("submitted")
         console.log(album)
-        fetch('',{
+        fetch('http://localhost:3001/albums',{
             method: 'POST',
             headers: {
                 'Content-Type': "application/json"
             },
             body: JSON.stringify(album)
         })
+        .then(res => res.json())
+        .then(data => {
+            addAlbum(data)
 
+        })
+
+     
     }
 
     function handleChange(e) {

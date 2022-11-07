@@ -7,7 +7,7 @@ function AlbumList( {albums} ){
     console.log(albums)
 
     return (
-        <div>
+        <div className="container">
             <h3>ALBUMS IN MY COLLECTION</h3>
             {albumListItems}
         </div>
