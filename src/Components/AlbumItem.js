@@ -5,21 +5,38 @@ import Emoji from "./Emoji";
 
 function AlbumItem({ album }) {
 
-    const ratingNum = parseInt(album.rating)
+    const { title, artist, 
+        image = "https://upload.wikimedia.org/wikipedia/commons/3/3c/No-album-art.png", rating } = album
 
-    const renderStars = (amount) => {
-        return (
-            [...Array(amount)].map((item, index) => <Emoji key={item} symbol="⭐" />)
-            )
-    }
+
+
+    const ratingNum = parseInt(rating)
+
+
+    
+
+    
+    // const renderStars = (amount) => {
+    //     return (
+    //         [...Array(amount)].map((item, index) => <Emoji key={index} symbol="⭐" />)
+    //     )
+    // }
+
+    function renderStars(){
+        let count = 0
+        return(
+            Array.from({length: ratingNum}, () => <Emoji key={count++} symbol="⭐" />)
+           )
+}
+
 
     return (
         <li className="card">
             <div className="content">
-                <img className="image" src={album.image} alt={album.title} />
-                <h2>{album.title}</h2>
-                <p>{album.artist}</p>
-                {renderStars(ratingNum)}
+                <img className="image" src={image ? image : "https://upload.wikimedia.org/wikipedia/commons/3/3c/No-album-art.png"} alt={title} />
+                <h2>{title}</h2>
+                <p>{artist}</p>
+                {renderStars()}
             </div>
         </li>
 

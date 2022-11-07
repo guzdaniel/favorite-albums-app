@@ -17,9 +17,15 @@
     {
       "title": "X&Y",
       "artist": "Coldplay",
-      "image": "https://coverartarchive.org/release-group/c50b180a-12c9-3153-8ba5-eac6a6537d6f/front",
       "rating": "5",
       "id": 3
+    },
+    {
+      "title": "Viva La Vida",
+      "artist": "Coldplay",
+      "image": "",
+      "rating": "4",
+      "id": 4
     }
   ]
 }
