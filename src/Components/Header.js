@@ -4,7 +4,6 @@ function Header() {
     return (
         <header>
         <h1>Favorite Albums App</h1>
-        <hr/>
         </header>
     )
 }

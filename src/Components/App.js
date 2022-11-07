@@ -23,7 +23,7 @@ function App() {
     }, [])
 
     function addAlbum (addedAlbum){
-      setAlbums([...albums, addedAlbum])
+      setAlbums(albumsObj => [...albumsObj, addedAlbum])
     }
 
 
