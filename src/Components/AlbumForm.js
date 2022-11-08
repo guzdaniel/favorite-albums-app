@@ -16,7 +16,7 @@ function AlbumForm({ addAlbum }) {
 
     function handleSubmit(e) {
         e.preventDefault()
-        console.log("submitted")
+        // console.log("submitted")
 
         fetch('http://localhost:3001/albums', {
             method: 'POST',
