@@ -1,73 +1,18 @@
 {
   "albums": [
     {
-      "id": 1,
       "title": "Parachutes",
       "artist": "Coldplay",
       "image": "https://coverartarchive.org/release-group/1dc4c347-a1db-32aa-b14f-bc9cc507b843/front",
-      "rating": 1
+      "rating": "4",
+      "id": 1
     },
     {
-      "id": 2,
-      "title": "A Rush of Blood to the Head",
-      "artist": "Coldplay",
-      "image": "https://coverartarchive.org/release-group/120c786d-a3b2-3c19-b4ff-2b7b3b4435bf/front",
-      "rating": 3
-    },
-    {
-      "title": "X&Y",
-      "artist": "Coldplay",
-      "rating": "5",
-      "id": 3
-    },
-    {
-      "title": "",
-      "artist": "",
-      "image": "",
-      "rating": "",
-      "id": 4
-    },
-    {
-      "title": "fdf",
-      "artist": "fdfd",
-      "image": "fdfd",
-      "rating": "1",
-      "id": 5
-    },
-    {
-      "title": "fdfd",
-      "artist": "fdfd",
-      "image": "fdfd",
-      "rating": "1",
-      "id": 6
-    },
-    {
-      "title": "jkjkl",
-      "artist": "jkjkl",
-      "image": "jkhjk",
-      "rating": "1",
-      "id": 7
-    },
-    {
-      "title": "fdsfs",
-      "artist": "fsdf",
-      "image": "fdsfds",
-      "rating": "1",
-      "id": 8
-    },
-    {
-      "title": "A Head Full of Dreams",
-      "artist": "Coldplay",
-      "image": "https://coverartarchive.org/release-group/27da3ef8-f3b0-47bf-898d-9bdf4af7fc04/front",
-      "rating": "1",
-      "id": 9
-    },
-    {
-      "title": "A Head Full of Dreams",
-      "artist": "Coldplay",
-      "image": "https://coverartarchive.org/release-group/27da3ef8-f3b0-47bf-898d-9bdf4af7fc04/front",
-      "rating": "3",
-      "id": 10
+      "title": "Hot Fuss",
+      "artist": "The Killers",
+      "image": "https://coverartarchive.org/release-group/e8c09b4e-33ae-368b-8f70-24b4e14fb9ad/front",
+      "rating": "4",
+      "id": 2
     }
   ]
 }
