@@ -47,6 +47,27 @@
       "image": "jkhjk",
       "rating": "1",
       "id": 7
+    },
+    {
+      "title": "fdsfs",
+      "artist": "fsdf",
+      "image": "fdsfds",
+      "rating": "1",
+      "id": 8
+    },
+    {
+      "title": "A Head Full of Dreams",
+      "artist": "Coldplay",
+      "image": "https://coverartarchive.org/release-group/27da3ef8-f3b0-47bf-898d-9bdf4af7fc04/front",
+      "rating": "1",
+      "id": 9
+    },
+    {
+      "title": "A Head Full of Dreams",
+      "artist": "Coldplay",
+      "image": "https://coverartarchive.org/release-group/27da3ef8-f3b0-47bf-898d-9bdf4af7fc04/front",
+      "rating": "3",
+      "id": 10
     }
   ]
 }

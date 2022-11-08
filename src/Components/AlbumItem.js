@@ -1,11 +1,10 @@
 import React from "react";
 import '../AlbumItem.css';
-import { useState } from "react";
 import Emoji from "./Emoji";
 
 function AlbumItem({ album }) {
 
-    const { title, artist, 
+    const { title, artist,
         image = "https://upload.wikimedia.org/wikipedia/commons/3/3c/No-album-art.png", rating } = album
 
 
@@ -13,12 +12,12 @@ function AlbumItem({ album }) {
     const ratingNum = parseInt(rating)
 
 
-    function renderStars(){
+    function renderStars() {
         let count = 0
-        return(
-            Array.from({length: ratingNum}, () => <Emoji key={count++} symbol="⭐" />)
-           )
-}
+        return (
+            Array.from({ length: ratingNum }, () => <Emoji key={count++} symbol="⭐" />)
+        )
+    }
 
 
     return (

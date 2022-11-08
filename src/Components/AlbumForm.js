@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useHistory } from "react-router-dom"
+import '../AlbumForm.css'
 
 function AlbumForm({ addAlbum }) {
 
@@ -37,38 +38,25 @@ function AlbumForm({ addAlbum }) {
         setAlbumForm(previousAlbumForm => ({ ...previousAlbumForm, [e.target.name]: e.target.value }))
     }
 
-    // function handleRating(rateNum) {
-    //     const rating = parseInt(rateNum)
-    //     if (rating < 5 && rating > 0) {
-    //         setAlbumForm(previousAlbumForm => ({ ...previousAlbumForm, [albumForm.rating]: rating}))
-    //     }
-    //     else {
-    //         window.alert("Only a number between 1 and 5")
-    //         setAlbumForm(previousAlbumForm => ({ ...previousAlbumForm, [albumForm.rating]: ""}))
-    //         handleSubmit()
-    //     }
-
-    // }
-
 
     return (
         <div>
             <form className="container" onSubmit={handleSubmit}>
                 <label htmlFor="title">Album Title: </label>
                 <input type="text" id="title" name="title" required placeholder="Enter Title"
-                    value={albumForm.title} onChange={handleChange} /> <br />
+                    value={albumForm.title} onChange={handleChange} /><br/>
 
                 <label htmlFor="title">Artist: </label>
                 <input type="text" id="artist" name="artist" required placeholder="Enter Artist"
-                    value={albumForm.artist} onChange={handleChange} /> <br />
+                    value={albumForm.artist} onChange={handleChange} /> <br/>
 
                 <label htmlFor="title">Image URL: </label>
                 <input type="text" id="image" name="image" required placeholder="Enter URL"
-                    value={albumForm.image} onChange={handleChange} /> <br />
+                    value={albumForm.image} onChange={handleChange} /> <br/>
 
                 <label htmlFor="title">Rating: </label>
                 <input type="number" id="rating" name="rating" min="1" max="4" required
-                    value={albumForm.rating} onChange ={handleChange} /> <br />
+                    value={albumForm.rating} onChange ={handleChange} /><br/>
 
                 <input type="submit" value="Submit" />
             </form>
