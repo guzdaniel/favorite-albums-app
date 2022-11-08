@@ -36,8 +36,8 @@ function App() {
           <Route path="/albums/new">
             <AlbumForm addAlbum={addAlbum}/>
           </Route>
-          <Route path="/albums/:id">
-            <AlbumItem />
+          <Route path="/albums/:name" render={(routerProps) => <AlbumItem {...routerProps}/>}>
+            
           </Route>
           <Route path="/albums">
             <AlbumList albums={albums} />
