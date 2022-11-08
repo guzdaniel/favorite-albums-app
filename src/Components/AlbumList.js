@@ -8,7 +8,6 @@ function AlbumList( {albums} ){
 
     return (
         <div className="container">
-            <h3>ALBUMS IN MY COLLECTION</h3>
             {albumListItems}
         </div>
     )
