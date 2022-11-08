@@ -42,6 +42,18 @@ Open in localhost:3000 in your browser.
 
 >``http://localhost:3000``
 
+## Technologies Used
+
+This Single Page Application was made using:
+- Javascript
+- React
+- react-router-dom@5 (version 5)
+- styled-components
+- CSS
+- json-server
+- [MusicBrainz Album Artworks](https://musicbrainz.org/)
+
+
 ## MIT License
 
 
