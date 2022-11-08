@@ -20,6 +20,13 @@
       "image": "https://archive.org/download/mbid-78478991-6484-47ef-811e-d9305df36aa1/mbid-78478991-6484-47ef-811e-d9305df36aa1-30677788125_thumb500.jpg",
       "rating": "4",
       "id": 3
+    },
+    {
+      "title": "Father of the Bride",
+      "artist": "Vampire Weekend",
+      "image": "https://archive.org/download/mbid-406c06b7-fc45-4447-a5a7-4d21eda709f5/mbid-406c06b7-fc45-4447-a5a7-4d21eda709f5-32058063945_thumb500.jpg",
+      "rating": "3",
+      "id": 4
     }
   ]
 }

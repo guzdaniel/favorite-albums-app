@@ -4,7 +4,7 @@ function Home() {
     return (
         <div>
             <h2>Welcome to Favorite Albums App</h2>
-            <h4>An app where you can add all your favorite albums <br /> from your favorite artists so that you can <br />remember to listen to them later.
+            <h4>An app where you can add and rate all of your <br /> favorite albums from your favorite artists so that <br /> you can remember to listen to them later.
             </h4>
             <h4>Click on My Albums to view your albums.
             </h4>
