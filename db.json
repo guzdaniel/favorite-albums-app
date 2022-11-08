@@ -13,6 +13,13 @@
       "image": "https://coverartarchive.org/release-group/e8c09b4e-33ae-368b-8f70-24b4e14fb9ad/front",
       "rating": "4",
       "id": 2
+    },
+    {
+      "title": "Music of the Spheres",
+      "artist": "Coldplay",
+      "image": "https://archive.org/download/mbid-78478991-6484-47ef-811e-d9305df36aa1/mbid-78478991-6484-47ef-811e-d9305df36aa1-30677788125_thumb500.jpg",
+      "rating": "4",
+      "id": 3
     }
   ]
 }

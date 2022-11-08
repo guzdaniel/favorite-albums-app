@@ -5,11 +5,11 @@
 
 ## App Philosophy
 
-The target audience of this app is any music fanatic that enjoys collecting albums. This app will help the user keep track of their favorites by adding them to a collection which they can use later to help them remember which albums to listen to.
+The target audience of this app is any music fanatic that enjoys collecting albums to listen to. This app will help the user keep track of their favorite albums by adding them to a collection. They can reference the collection later to help them remember which albums to listen to.
 
 ## Features
 
-* Add a new album to your collection, including its title, the artist, the album artwork, and a personal rating
+* Add a new album to your collection, including its title, its artist, its album artwork, and a personal rating
 * View a list of your collection of albums
 
 ## Requirements
@@ -53,6 +53,13 @@ This Single Page Application was made using:
 - json-server
 - [MusicBrainz Album Artworks](https://musicbrainz.org/)
 
+---
+
+## How To Use
+
+![image](./img/appdemo.gif)
+
+---
 
 ## MIT License
 
