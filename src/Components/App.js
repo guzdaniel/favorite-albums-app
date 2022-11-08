@@ -3,7 +3,6 @@ import '../App.css';
 import Home from './Home';
 import AlbumList from './AlbumList';
 import AlbumForm from './AlbumForm';
-import AlbumItem from './AlbumItem';
 import Navigation from './Navigation';
 import Header from './Header';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
@@ -12,29 +11,29 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [albums, setAlbums] = useState([])
-    
-    
-    useEffect(() => {
-        fetch("http://localhost:3001/albums")
-        .then(res => res.json())
-        .then(data => {
-            setAlbums(data)
-        })
-    }, [])
 
-    function addAlbum (addedAlbum){
-      setAlbums(previousAlbums => [...previousAlbums, addedAlbum])
-    }
+
+  useEffect(() => {
+    fetch("http://localhost:3001/albums")
+      .then(res => res.json())
+      .then(data => {
+        setAlbums(data)
+      })
+  }, [])
+
+  function addAlbum(addedAlbum) {
+    setAlbums(previousAlbums => [...previousAlbums, addedAlbum])
+  }
 
 
   return (
     <Router>
       <div className="App">
-        <Header className="header"/>
+        <Header className="header" />
         <Navigation />
         <Switch>
           <Route exact path="/albums/new">
-            <AlbumForm addAlbum={addAlbum}/>
+            <AlbumForm addAlbum={addAlbum} />
           </Route>
           <Route exact path="/albums">
             <AlbumList albums={albums} />

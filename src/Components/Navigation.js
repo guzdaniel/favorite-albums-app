@@ -47,7 +47,7 @@ function Navigation() {
             >
                 Add An Album
             </NavLink>
-            <hr/>
+            <hr />
         </nav>
     );
 }
