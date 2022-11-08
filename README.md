@@ -33,11 +33,16 @@ npm install
 
 ## Usage
 
-In the same directory, use npm start to run the server and the app.
+In the same directory, use npm run server to run the json server 
 
+```bash
+npm run server
+```
+In the same directory, and in a new terminal window, use npm start to run the app
 ```bash
 npm start
 ```
+
 Open in localhost:3000 in your browser.
 
 >``http://localhost:3000``

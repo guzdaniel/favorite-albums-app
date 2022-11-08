@@ -33,10 +33,10 @@ function App() {
         <Header className="header"/>
         <Navigation />
         <Switch>
-          <Route path="/albums/new">
+          <Route exact path="/albums/new">
             <AlbumForm addAlbum={addAlbum}/>
           </Route>
-          <Route path="/albums">
+          <Route exact path="/albums">
             <AlbumList albums={albums} />
           </Route>
           <Route exact path="/">
