@@ -14,6 +14,7 @@ function AlbumForm({ addAlbum }) {
     function handleSubmit(e) {
         e.preventDefault()
         console.log("submitted")
+
         fetch('http://localhost:3001/albums', {
             method: 'POST',
             headers: {
@@ -32,13 +33,25 @@ function AlbumForm({ addAlbum }) {
                 })
 
             })
-
-
     }
 
     function handleChange(e) {
+        // console.log(e.target.value)
         setAlbumForm(previousAlbumForm => ({ ...previousAlbumForm, [e.target.name]: e.target.value }))
     }
+
+    // function handleRating(rateNum) {
+    //     const rating = parseInt(rateNum)
+    //     if (rating < 5 && rating > 0) {
+    //         setAlbumForm(previousAlbumForm => ({ ...previousAlbumForm, [albumForm.rating]: rating}))
+    //     }
+    //     else {
+    //         window.alert("Only a number between 1 and 5")
+    //         setAlbumForm(previousAlbumForm => ({ ...previousAlbumForm, [albumForm.rating]: ""}))
+    //         handleSubmit()
+    //     }
+
+    // }
 
 
     return (
@@ -57,8 +70,8 @@ function AlbumForm({ addAlbum }) {
                     value={albumForm.image} onChange={handleChange} /> <br />
 
                 <label htmlFor="title">Rating: </label>
-                <input type="text" id="rating" name="rating" placeholder="Enter Rating 1-4"
-                    value={albumForm.rating} onChange={handleChange} /> <br />
+                <input type="number" id="rating" name="rating" min="1" max="4"
+                    value={albumForm.rating} onChange ={handleChange} /> <br />
 
                 <input type="submit" value="Submit" />
             </form>

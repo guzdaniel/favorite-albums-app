@@ -19,20 +19,6 @@
       "artist": "Coldplay",
       "rating": "5",
       "id": 3
-    },
-    {
-      "title": "Viva La Vida",
-      "artist": "Coldplay",
-      "image": "",
-      "rating": "4",
-      "id": 4
-    },
-    {
-      "title": "fdf",
-      "artist": "fdfd",
-      "image": "",
-      "rating": "fdf",
-      "id": 5
     }
   ]
 }
