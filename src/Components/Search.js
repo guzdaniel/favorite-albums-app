@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-function Search({ search, setSearch }){
+function Search({ setSearch }){
 
     const [searchForm, setSearchForm] = useState("")
 
@@ -13,6 +13,8 @@ function Search({ search, setSearch }){
 
     function handleSubmit(e){
         e.preventDefault()
+        setSearch(searchForm)
+        setSearchForm("")
         console.log(searchForm)
         
     }
