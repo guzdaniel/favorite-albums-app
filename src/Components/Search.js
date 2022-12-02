@@ -8,17 +8,22 @@ function Search(){
 
     function handleChange(e) {
         setSearchForm(e.target.value)
-        console.log(searchForm)
+        
     }
 
-   
+    function handleSubmit(e){
+        e.preventDefault()
+        console.log(searchForm)
+        
+    }
     
 
     return(
         <div>
             Search for an album title:
-            <form>
+            <form onSubmit={handleSubmit}>
                 <input type="text" name="search" value={searchForm} onChange={handleChange} />
+                <input type="submit" value="Submit" />
             </form>
         </div>
     )
