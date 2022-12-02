@@ -42,13 +42,13 @@ function App() {
       <div className="App">
         <Header className="header" />
         <Navigation />
-        <Search search={search} setSearch={setSearch} />
+        <Search setSearch={setSearch} />
         <Switch>
           <Route exact path="/albums/new">
             <AlbumForm addAlbum={addAlbum} />
           </Route>
           <Route exact path="/albums">
-            <AlbumList albums={albums} />
+            <AlbumList filteredAlbums={filteredAlbums} />
           </Route>
           <Route exact path="/">
             <Home />
