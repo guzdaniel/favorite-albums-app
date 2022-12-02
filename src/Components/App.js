@@ -13,6 +13,8 @@ import Search from './Search';
 function App() {
   const [albums, setAlbums] = useState([])
 
+  const [search, setSearch] = useState("")
+
 
   useEffect(() => {
     fetch("http://localhost:3001/albums")
@@ -26,13 +28,15 @@ function App() {
     setAlbums(previousAlbums => [...previousAlbums, addedAlbum])
   }
 
+  
+
 
   return (
     <Router>
       <div className="App">
         <Header className="header" />
         <Navigation />
-        <Search />
+        <Search search={search} setSearch={setSearch}/>
         <Switch>
           <Route exact path="/albums/new">
             <AlbumForm addAlbum={addAlbum} />

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-function Search(){
+function Search({ search, setSearch }){
 
     const [searchForm, setSearchForm] = useState("")
 
