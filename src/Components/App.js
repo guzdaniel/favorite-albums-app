@@ -7,6 +7,7 @@ import Navigation from './Navigation';
 import Header from './Header';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { useState, useEffect } from "react";
+import Search from './Search';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
       <div className="App">
         <Header className="header" />
         <Navigation />
+        <Search />
         <Switch>
           <Route exact path="/albums/new">
             <AlbumForm addAlbum={addAlbum} />

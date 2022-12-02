@@ -6,6 +6,20 @@
       "image": "https://archive.org/download/mbid-3127c6af-617f-4d82-9002-6cc74ab8648d/mbid-3127c6af-617f-4d82-9002-6cc74ab8648d-2077878547_thumb500.jpg",
       "rating": "4",
       "id": 1
+    },
+    {
+      "title": "Parachutes",
+      "artist": "Coldplay",
+      "image": "https://archive.org/download/mbid-03271bb1-a396-4038-a068-b7d5945c2c37/mbid-03271bb1-a396-4038-a068-b7d5945c2c37-32061600279_thumb500.jpg",
+      "rating": "5",
+      "id": 2
+    },
+    {
+      "title": "Mylo Xyloto",
+      "artist": "Coldplay",
+      "image": "https://archive.org/download/mbid-8150971b-e254-4e57-9cd9-8300b2727df5/mbid-8150971b-e254-4e57-9cd9-8300b2727df5-2833397499_thumb500.jpg",
+      "rating": "3",
+      "id": 3
     }
   ]
 }
