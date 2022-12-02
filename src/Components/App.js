@@ -28,7 +28,13 @@ function App() {
     setAlbums(previousAlbums => [...previousAlbums, addedAlbum])
   }
 
-  
+  const albumsCopy = [...albums]
+  const filteredAlbums = albumsCopy.filter(album => {
+    return (
+      album.title.toUpperCase().includes(search.toUpperCase())
+    )
+  })
+
 
 
   return (
@@ -36,7 +42,7 @@ function App() {
       <div className="App">
         <Header className="header" />
         <Navigation />
-        <Search search={search} setSearch={setSearch}/>
+        <Search search={search} setSearch={setSearch} />
         <Switch>
           <Route exact path="/albums/new">
             <AlbumForm addAlbum={addAlbum} />
